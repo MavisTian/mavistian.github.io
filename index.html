@@ -1,610 +1,1793 @@
 <!DOCTYPE html>
-<html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
 
   
-  <title>Mavis&#39;s Blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一个前端的小姐姐">
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="true">
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="前端, js, JavaScript, JQuery, WuliHub, Vue, Vue.js">
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="WuliHub's Blog" type="application/atom+xml">
+
+
+
+
+
+
+<meta name="description" content="一个前端的小姐姐">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Mavis&#39;s Blog">
-<meta property="og:url" content="http://mavistian.github.io/index.html">
-<meta property="og:site_name" content="Mavis&#39;s Blog">
+<meta property="og:title" content="WuliHub&#39;s Blog">
+<meta property="og:url" content="http://wulihub.github.io/index.html">
+<meta property="og:site_name" content="WuliHub&#39;s Blog">
 <meta property="og:description" content="一个前端的小姐姐">
-<meta property="og:locale" content="default">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mavis&#39;s Blog">
+<meta name="twitter:title" content="WuliHub&#39;s Blog">
 <meta name="twitter:description" content="一个前端的小姐姐">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://wulihub.github.io/">
+
+
+
+
+
+  <title>WuliHub's Blog</title>
   
-    <link rel="alternate" href="/atom.xml" title="Mavis&#39;s Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
 </head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Mavis&#39;s Blog</a>
-      </h1>
-      
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">WuliHub's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-          <a class="main-nav-link" href="/">Home</a>
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
         
-      </nav>
-      <nav id="sub-nav">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://mavistian.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-1552828024" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/1552828024/" class="article-date">
-  <time datetime="2019-03-13T14:09:41.000Z" itemprop="datePublished">2019-03-13</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
-  </div>
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
 
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/1552828024/">Es6--箭函数</a>
-    </h1>
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
   
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>ES6可以使用“箭头”（=&gt;）定义函数，注意是函数，不要使用这种方式定义<a href="http://www.cnblogs.com/snandy/archive/2011/03/06/1971764.html" target="_blank" rel="noopener">类</a>（构造器）。</p>
-<h3 id="一、语法"><a href="#一、语法" class="headerlink" title="一、语法"></a>一、语法</h3><h4 id="具有一个参数的简单函数"><a href="#具有一个参数的简单函数" class="headerlink" title="具有一个参数的简单函数"></a>具有一个参数的简单函数</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `single = a =&gt; a``single(``&apos;hello, world&apos;``) ``// &apos;hello, world&apos;`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="没有参数的需要用在箭头前加上小括号"><a href="#没有参数的需要用在箭头前加上小括号" class="headerlink" title="没有参数的需要用在箭头前加上小括号"></a>没有参数的需要用在箭头前加上小括号</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `log = () =&gt; &#123;``    ``alert(``&apos;no param&apos;``)``&#125;`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="多个参数需要用到小括号，参数间逗号间隔，例如两个数字相加"><a href="#多个参数需要用到小括号，参数间逗号间隔，例如两个数字相加" class="headerlink" title="多个参数需要用到小括号，参数间逗号间隔，例如两个数字相加"></a>多个参数需要用到小括号，参数间逗号间隔，例如两个数字相加</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `add = (a, b) =&gt; a + b``add(3, 8) ``// 11`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="函数体多条语句需要用到大括号"><a href="#函数体多条语句需要用到大括号" class="headerlink" title="函数体多条语句需要用到大括号"></a>函数体多条语句需要用到大括号</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `add = (a, b) =&gt; &#123;``    ``if` `(``typeof` `a == ``&apos;number&apos;` `&amp;&amp; ``typeof` `b == ``&apos;number&apos;``) &#123;``        ``return` `a + b``    ``&#125; ``else` `&#123;``        ``return` `0``    ``&#125;``&#125;`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="返回对象时需要用小括号包起来，因为大括号被占用解释为代码块了"><a href="#返回对象时需要用小括号包起来，因为大括号被占用解释为代码块了" class="headerlink" title="返回对象时需要用小括号包起来，因为大括号被占用解释为代码块了"></a>返回对象时需要用小括号包起来，因为大括号被占用解释为代码块了</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `getHash = arr =&gt; &#123;``    ``// ...``    ``return` `(&#123;``        ``name: ``&apos;Jack&apos;``,``        ``age: 33``    ``&#125;)``&#125;`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="直接作为事件handler"><a href="#直接作为事件handler" class="headerlink" title="直接作为事件handler"></a>直接作为事件handler</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`document.addEventListener(``&apos;click&apos;``, ev =&gt; &#123;``    ``console.log(ev)``&#125;)`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="作为数组排序回调"><a href="#作为数组排序回调" class="headerlink" title="作为数组排序回调"></a>作为数组排序回调</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `arr = [1, 9 , 2, 4, 3, 8].sort((a, b) =&gt; &#123;``    ``if` `(a - b &gt; 0 ) &#123;``        ``return` `1``    ``&#125; ``else` `&#123;``        ``return` `-1``    ``&#125;``&#125;)``arr ``// [1, 2, 3, 4, 8, 9]`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h3 id="二、注意点"><a href="#二、注意点" class="headerlink" title="二、注意点"></a>二、注意点</h3><h4 id="typeof运算符和普通的function一样"><a href="#typeof运算符和普通的function一样" class="headerlink" title="typeof运算符和普通的function一样"></a>typeof运算符和普通的function一样</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `func = a =&gt; a``console.log(``typeof` `func); ``// &quot;function&quot;`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="instanceof也返回true，表明也是Function的实例"><a href="#instanceof也返回true，表明也是Function的实例" class="headerlink" title="instanceof也返回true，表明也是Function的实例"></a><a href>instanceof</a>也返回true，表明也是Function的实例</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`console.log(func ``instanceof` `Function); ``// true`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<h4 id="this固定，不再善变"><a href="#this固定，不再善变" class="headerlink" title="this固定，不再善变"></a>this固定，不再善变</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`obj = &#123;``    ``data: [``&apos;John Backus&apos;``, ``&apos;John Hopcroft&apos;``],``    ``init: ``function``() &#123;``        ``document.onclick = ev =&gt; &#123;``            ``alert(``this``.data) ``// [&apos;John Backus&apos;, &apos;John Hopcroft&apos;]``        ``&#125;``        ``// 非箭头函数``        ``// document.onclick = function(ev) &#123;``        ``//     alert(this.data) // undefined``        ``// &#125;``    ``&#125;``&#125;``obj.init()`</span><br></pre></td></tr></table></figure>
-<p>这个很有用，再不用写me，self，_this了，或者bind。</p>
-<h4 id="箭头函数不能用new"><a href="#箭头函数不能用new" class="headerlink" title="箭头函数不能用new"></a>箭头函数不能用new</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `Person = (name, age) =&gt; &#123;``    ``this``.name = name``    ``this``.age = age``&#125;``var` `p = ``new` `Func(``&apos;John&apos;``, 33) ``// error`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<p>不能使用argument</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`var` `func = () =&gt; &#123;``    ``console.log(arguments)``&#125;``func(55) ``//`</span><br></pre></td></tr></table></figure>
-<p>　　</p>
-<p>对于5，在Firefox36里测试是可以输出55的，貌似并没有这个限制</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mavistian.github.io/2019/03/1552828024/" data-id="cjtcy5ki90001xsu3ix16t39m" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ES6/">ES6</a></li></ul>
-
-    </footer>
-  </div>
   
-</article>
-
-
-  
-    <article id="post-Vue的生命周期" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/Vue的生命周期/" class="article-date">
-  <time datetime="2019-03-13T10:59:25.908Z" itemprop="datePublished">2019-03-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
+    <div class="site-search">
       
-        <h3 id="Vue的生命周期"><a href="#Vue的生命周期" class="headerlink" title="Vue的生命周期"></a>Vue的生命周期</h3><h4 id="什么是生命周期"><a href="#什么是生命周期" class="headerlink" title="什么是生命周期"></a>什么是生命周期</h4><p>Vue实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载Dom、渲染→更新→渲染、卸载等一系列过程，我们称这是Vue的生命周期。通俗说就是Vue实例从创建到销毁的过程，就是生命周期。<br>在Vue的整个生命周期中，它提供了一系列的事件，可以让我们在事件触发时注册js方法，可以让我们用自己注册的js方法控制整个大局，在这些事件响应方法中的this直接指向的是vue的实例。</p>
-<h4 id="对生命周期图的标注"><a href="#对生命周期图的标注" class="headerlink" title="对生命周期图的标注"></a>对生命周期图的标注</h4><p><img src="https://img-blog.csdn.net/20171205094423883?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbTBfMzc4NTI5MDQ=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<h5 id="特别值得注意的是created钩子函数和mounted钩子函数的区别…"><a href="#特别值得注意的是created钩子函数和mounted钩子函数的区别…" class="headerlink" title="特别值得注意的是created钩子函数和mounted钩子函数的区别…"></a>特别值得注意的是created钩子函数和mounted钩子函数的区别…</h5><h4 id="每个钩子函数都在啥时间触发"><a href="#每个钩子函数都在啥时间触发" class="headerlink" title="每个钩子函数都在啥时间触发"></a>每个钩子函数都在啥时间触发</h4><h5 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a>beforeCreate</h5><p>在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。 </p>
-<h5 id="created"><a href="#created" class="headerlink" title="created"></a>created</h5><p>实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。 </p>
-<h5 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a>beforeMount</h5><p>在挂载开始之前被调用：相关的 render 函数首次被调用。 </p>
-<h5 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a>mounted</h5><p>el 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。 </p>
-<h5 id="beforeUpdate"><a href="#beforeUpdate" class="headerlink" title="beforeUpdate"></a>beforeUpdate</h5><p>数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。 </p>
-<h5 id="updated"><a href="#updated" class="headerlink" title="updated"></a>updated</h5><p>由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。<br>当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。</p>
-<p>该钩子在服务器端渲染期间不被调用。</p>
-<h5 id="beforeDestroy"><a href="#beforeDestroy" class="headerlink" title="beforeDestroy"></a>beforeDestroy</h5><p>实例销毁之前调用。在这一步，实例仍然完全可用。 </p>
-<h5 id="destroyed"><a href="#destroyed" class="headerlink" title="destroyed"></a>destroyed</h5><p>Vue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mavistian.github.io/2019/03/Vue的生命周期/" data-id="cjtcy5kif0004xsu32bmig9l4" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-1552484072" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/03/1552484072/" class="article-date">
-  <time datetime="2019-03-10T14:09:41.000Z" itemprop="datePublished">2019-03-10</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/javaScript/">javaScript</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/1552484072/">移动端适配解决方案</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>在网上搜了一下，很多面试都会被问到移动端适配方法的问题，最近看了一些文章，这里总结一下。</p>
-<p>首先，谈一下目前为止出现的一些关于移动端适配的技术方案：</p>
-<pre><code>（1）通过媒体查询的方式即CSS3的meida queries
-（2）以天猫首页为代表的 flex 弹性布局
-（3）以淘宝首页为代表的 rem+viewport缩放
-（4）rem 方式
-</code></pre><h4 id="1-Media-Queries"><a href="#1-Media-Queries" class="headerlink" title="1.Media Queries"></a>1.Media Queries</h4><p>meida queries 的方式可以说是我早期采用的布局方式，它主要是通过查询设备的宽度来执行不同的 css 代码，最终达到界面的配置。核心语法是：</p>
-<p>@media screen and (max-width: 600px) { /<em>当屏幕尺寸小于600px时，应用下面的CSS样式</em>/<br>  /<em>你的css代码</em>/<br>}</p>
-<p>优点</p>
-<p>media query可以做到设备像素比的判断，方法简单，成本低，特别是对移动和PC维护同一套代码的时候。目前像Bootstrap等框架使用这种方式布局<br>图片便于修改，只需修改css文件<br>调整屏幕宽度的时候不用刷新页面即可响应式展示<br>缺点</p>
-<p>代码量比较大，维护不方便<br>为了兼顾大屏幕或高清设备，会造成其他设备资源浪费，特别是加载图片资源<br>为了兼顾移动端和PC端各自响应式的展示效果，难免会损失各自特有的交互方式</p>
-<h4 id="2-Flex弹性布局"><a href="#2-Flex弹性布局" class="headerlink" title="2.Flex弹性布局"></a>2.Flex弹性布局</h4><p>以天猫的实现方式进行说明：</p>
-<p>它的viewport是固定的：<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> </p>
-<p>高度定死，宽度自适应，元素都采用px做单位。</p>
-<p>随着屏幕宽度变化，页面也会跟着变化，效果就和PC页面的流体布局差不多，在哪个宽度需要调整的时候使用响应式布局调调就行（比如网易新闻），这样就实现了『适配』。</p>
-<h4 id="3-rem-viewport-缩放"><a href="#3-rem-viewport-缩放" class="headerlink" title="3.rem + viewport 缩放"></a>3.rem + viewport 缩放</h4><p>这也是淘宝使用的方案，根据屏幕宽度设定 rem 值，需要适配的元素都使用 rem 为单位，不需要适配的元素还是使用 px 为单位。（1em = 16px）<br>PS：rem<br>rem是CSS3新增的一个相对单位（root em，根em），这个单位引起了广泛关注。这个单位与em有什么区别呢？<br>区别在于使用rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML根元素。这个单位可谓集相对大小和绝对<br>大小的优点于一身，通过它既可以做到只修改根元素就成比例地调整所有字体大小，又可以避免字体大小逐层复合的连锁<br>反应。目前，除了IE8及更早版本外，所有浏览器均已支持rem。对于不支持它的浏览器，应对方法也很简单，就是多写一<br>个绝对单位的声明。这些浏览器会忽略用rem设定的字体大小。比如：p{font-size:14px;font-size:0.875rem;}<br>(推荐一个单位转换的工具：<a href="http://pxtoem.com/" target="_blank" rel="noopener">http://pxtoem.com/</a>)</p>
-<p>实现原理<br>根据rem将页面放大dpr倍, 然后viewport设置为1/dpr.</p>
-<p>如iphone6 plus的dpr为3, 则页面整体放大3倍, 1px(css单位)在plus下默认为3px(物理像素)<br>然后viewport设置为1/3, 这样页面整体缩回原始大小. 从而实现高清。 </p>
-<p>mobile-fe4.png </p>
-<p>mobile-fe3.png<br>这样整个网页在设备内显示时的页面宽度就会等于设备逻辑像素大小，也就是device-width。<br>这个device-width的计算公式为：设备的物理分辨率/(devicePixelRatio * scale)，<br>在scale为1的情况下，device-width = 设备的物理分辨率/devicePixelRatio 。</p>
-<h4 id="4、rem实现"><a href="#4、rem实现" class="headerlink" title="4、rem实现"></a>4、rem实现</h4><p>比如说“魅族”移动端的实现方式，viewport也是固定的： </p>
-<p><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">。<br>通过以下代码来控制rem基准值(设计稿以720px宽度量取实际尺寸)</p>
-<p>!function (d) {<br>​    var c = d.document;<br>​    var a = c.documentElement;<br>​    var b = d.devicePixelRatio;<br>​    var f;</p>
-<pre><code>function e() {
-  var h = a.getBoundingClientRect().width, g;
-  if (b === 1) {
-    h = 720
-  }
-  if(h&gt;720) h = 720;//设置基准值的极限值
-  g = h / 7.2;
-  a.style.fontSize = g + &quot;px&quot;
-}
-
-if (b &gt; 2) {
-  b = 3
-} else {
-  if (b &gt; 1) {
-    b = 2
-  } else {
-    b = 1
-  }
-}
-a.setAttribute(&quot;data-dpr&quot;, b);
-d.addEventListener(&quot;resize&quot;, function () {
-  clearTimeout(f);
-  f = setTimeout(e, 200)
-}, false);
-e()
-</code></pre><p>  }(window);</p>
-<p>css通过sass预编译，设置量取的px值转化rem的变量$px: (1/100)+rem; </p>
-<h4 id="1像素边框高清"><a href="#1像素边框高清" class="headerlink" title="1像素边框高清"></a>1像素边框高清</h4><p>1.淘宝实现方式<br>上面说到的淘宝的实现方式即rem+viewport 缩放来实现。</p>
-<p>transform: scale(0.5)</p>
-<p>CSS代码：</p>
-<p>div{<br>​    width: 1px;<br>​    height: 100%;<br>​    display: block;<br>​    border-left: 1px solid #e5e5e5;<br>​    -webkit-transform: scale(.5);<br>​    transform: scaleX(.5);<br>}</p>
-<p>缺点：</p>
-<p>圆角无法实现，实现4条边框比较麻烦，并且只能单独实现，如果嵌套，会对包含的效果产生不想要的效果，所以此方案配合:after和before独立使用较多。</p>
-<p>box-shadow</p>
-<p>实现方法：<br>利用CSS对阴影处理的方式实现0.5px的效果。</p>
-<p>-webkit-box-shadow:0 1px 1px -1px rgba(0, 0, 0, 0.5);<br>1<br>优点：</p>
-<p>基本所有场景都能满足，包含圆角的button，单条，多条线。</p>
-<p>缺点：</p>
-<p>颜色不好处理， 黑色 rgba(0,0,0,1) 最深的情况了。有阴影出现，不好用。<br>大量使用box-shadow可能会导致性能瓶颈。<br>四条边框实现效果不理想。</p>
-<p>2.图片实现</p>
-<p>使用 background-image 实现1px有两种方式: 渐变 linear-gradient 或直接使用图片(base64)。</p>
-<p>渐变 linear-gradient (50%有颜色，50%透明)</p>
-<p>单条线：</p>
-<p>div{<br>​    height: 1px;<br>​    background-image:-webkit-linear-gradient(top,transparent 50%,#000 50%);<br>​    background-position: top left;<br>​    background-repeat: no-repeat;<br>​    background-size: 100% 1px;<br>}</p>
-<p>多线条：</p>
-<p>div{<br>​    background-image: -webkit-linear-gradient(top,transparent 50%,#000 50%),<br>​    -webkit-linear-gradient(bottom, transparent 50%, #000 50%),<br>​    -webkit-linear-gradient(left, transparent 50%, #000 50%),<br>​    -webkit-linear-gradient(right, transparent 50%, #000 50%);<br>​    background-size: 100% 1px,100% 1px,1px 100%,1px 100%;<br>​    background-repeat: no-repeat;<br>​    background-position: top left, bottom left, left top, right top;</p>
-<p>优点:<br>可以设置单条,多条边框<br>可以设置颜色</p>
-<p>缺点:<br>大量使用渐变可能导致性能瓶颈<br>代码量大 </p>
-<p>多背景图片有兼容性问题</p>
-<p>原文：<a href="https://blog.csdn.net/chenjuan1993/article/details/81710022" target="_blank" rel="noopener">https://blog.csdn.net/chenjuan1993/article/details/81710022</a> </p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mavistian.github.io/2019/03/1552484072/" data-id="cjtcy5ki20000xsu3yz3g9gsn" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mobile/">Mobile</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-git" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/git/" class="article-date">
-  <time datetime="2018-11-01T07:28:26.207Z" itemprop="datePublished">2018-11-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="什么是GIT"><a href="#什么是GIT" class="headerlink" title="什么是GIT"></a>什么是GIT</h1><ul>
-<li><p>git是代码版本管理工具</p>
-</li>
-<li><p>与之类似的还有svn</p>
-</li>
-</ul>
-<h1 id="什么是Github"><a href="#什么是Github" class="headerlink" title="什么是Github"></a>什么是Github</h1><ul>
-<li><p>又称为Gayhub</p>
-</li>
-<li><p>全世界码农一致认为Github是全球最大的同性交友网站</p>
-</li>
-<li><p>严肃的说是一个远程的仓库，可以让我们保存自己的开源项目</p>
-</li>
-<li><p><a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
-</li>
-</ul>
-<h1 id="Git和Github区别"><a href="#Git和Github区别" class="headerlink" title="Git和Github区别"></a>Git和Github区别</h1><ul>
-<li>类似老婆和老婆饼的区别</li>
-</ul>
-<h1 id="如何使用git以及Github来进行代码版本管理"><a href="#如何使用git以及Github来进行代码版本管理" class="headerlink" title="如何使用git以及Github来进行代码版本管理"></a>如何使用git以及Github来进行代码版本管理</h1><h2 id="首先我们要配置公钥"><a href="#首先我们要配置公钥" class="headerlink" title="首先我们要配置公钥"></a>首先我们要配置公钥</h2><ul>
-<li><p>打开gitBush，输入以下命令</p>
-<blockquote>
-<p>ssh-keygen -t rsa</p>
-</blockquote>
-</li>
-<li><p>输入完成后，连续按三次回车，如果出现以下效果，则成功生成公钥和私钥</p>
-</li>
-</ul>
-<blockquote>
-<p><img src="./asset/1.jpg" alt="生成公钥"></p>
-</blockquote>
-<ul>
-<li>查看公钥保存位置</li>
-</ul>
-<blockquote>
-<p><img src="./asset/2.jpg" alt="生成公钥"></p>
-</blockquote>
-<ul>
-<li>配置公钥</li>
-</ul>
-<blockquote>
-<p>打开Github,单击头像，选择Setting<br><img src="./asset/3.jpg" alt="生成公钥"></p>
-</blockquote>
-<blockquote>
-<p>选中选项<br><img src="./asset/4.jpg" alt="生成公钥"></p>
-</blockquote>
-<blockquote>
-<p>创建新公钥<br><img src="./asset/5.jpg" alt="生成公钥"></p>
-</blockquote>
-<blockquote>
-<p>配置公钥，配置完成后单击Add SSH Key<br><img src="./asset/6.jpg" alt="生成公钥"></p>
-</blockquote>
-<h2 id="我们为甚么要配置公钥"><a href="#我们为甚么要配置公钥" class="headerlink" title="我们为甚么要配置公钥"></a>我们为甚么要配置公钥</h2><blockquote>
-<p>公钥我们一般是给服务器的,服务器会在权限中加入我给的公钥,然后当我从远地仓库中下载项目的时候,比如我在git clone xxx的时候，服务器就会通过我绑定的公钥来匹配我的私钥，这个时候,如果匹配,则就可以正常下载,如果不匹配,则失败.其实就是一种加密的保证安全的手段</p>
-</blockquote>
-<h2 id="创建本地仓库"><a href="#创建本地仓库" class="headerlink" title="创建本地仓库"></a>创建本地仓库</h2><ul>
-<li><p>本地新建项目文件夹，在文件夹内按住Shift键</p>
-</li>
-<li><p>使用git之前我们要进行全局或者局部用户名和邮箱配置</p>
-<blockquote>
-<p>git config –global user.name “Listen”<br>git config –global user.email “<a href="mailto:m18614084953@163.com" target="_blank" rel="noopener">m18614084953@163.com</a>“</p>
-</blockquote>
-</li>
-<li><p>初始化本地仓库</p>
-<blockquote>
-<p>git init</p>
-</blockquote>
-</li>
-<li>进行代码提交<blockquote>
-<p>git add . (你将会提交本地仓库的所有文件)<br>git add index.html (你将会提交你所声明的文件)</p>
-</blockquote>
-</li>
-<li>添加文件至暂存区<blockquote>
-<p>git commit -m “本次提交注释”</p>
-</blockquote>
-</li>
-<li>如果说你是第一次进行提交的话，那么你在进行push之前，需要再执行以下命令<blockquote>
-<p>git remote add origin <a href="https://github.com/listentime/MyObject.git" target="_blank" rel="noopener">https://github.com/listentime/MyObject.git</a></p>
-</blockquote>
-</li>
-<li>进行代码的推送<blockquote>
-<p>git push origin 分支名称（master）</p>
-</blockquote>
-</li>
-<li>切换分支<blockquote>
-<p>git checkout 分支名</p>
-</blockquote>
-</li>
-<li>创建分支<blockquote>
-<p>git branch 分支名</p>
-</blockquote>
-</li>
-<li>合写方式,创建并切换分支<blockquote>
-<p>git checkout -b 分支名</p>
-</blockquote>
-</li>
-<li>拉取代码<blockquote>
-<p>git pull origin 分支名</p>
-</blockquote>
-</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mavistian.github.io/2018/11/git/" data-id="cjtcy5kij0006xsu3gzocfm8f" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Git与GIthub的配合使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/Git与GIthub的配合使用/" class="article-date">
-  <time datetime="2018-11-01T07:00:33.685Z" itemprop="datePublished">2018-11-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Git-与-Github-的配合使用"><a href="#Git-与-Github-的配合使用" class="headerlink" title="Git 与 Github 的配合使用"></a>Git 与 Github 的配合使用</h1><h2 id="如何生成SSH公钥"><a href="#如何生成SSH公钥" class="headerlink" title="如何生成SSH公钥"></a>如何生成SSH公钥</h2><ol>
-<li>运行<code>git bash</code>，然后输入以下命令，切换到本机的用户目录下面的<code>.ssh</code>目录：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">cd ~/.ssh</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li><p>如果提示<code>No such file or directory</code>，则表示之前没有配置过<code>ssh公钥</code>；如果没有提示相关错误消息，则表示之前配置过<code>ssh 公钥</code></p>
-</li>
-<li><p>如果之前没有配置过<code>ssh 公钥</code>，则在<code>~/</code>目录中执行以下命令：</p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;</span><br></pre></td></tr></table></figure>
-<p>其中需要指定一个邮箱，最好是注册github的邮箱地址，执行命令之后，会有三次信息提示，直接输入三次回车即可在<code>用户根目录</code>中生成一个<code>.ssh</code>文件夹，下面存放着<code>ssh key</code>相关文件</p>
-<h2 id="将生成的ssh-key添加到GitHub"><a href="#将生成的ssh-key添加到GitHub" class="headerlink" title="将生成的ssh key添加到GitHub"></a>将生成的ssh key添加到GitHub</h2><ol>
-<li><p>登录GitHub，点击右上角头像，点击<code>settings</code> -&gt; <code>SSH and GPG keys</code> -&gt; <code>New SSH key</code>，会显示一个输入<code>Title</code>和<code>Key</code>的输入框组</p>
-</li>
-<li><p><code>Title</code>中根据需要随意填写即可</p>
-</li>
-<li><p><code>Key</code>中需要把刚生成的<code>ssh key</code>内容粘贴进去，可以进入<code>用户根目录</code>，找到<code>.ssh</code>文件夹，用记事本打开<code>id_rsa.pub</code>文件，这个文件中存放的就是刚才生成的<code>ssh key</code>；把文件中所有的字符串复制，粘贴到GitHub中保存即可</p>
-</li>
-</ol>
-<h2 id="配置Git提交时候的账户"><a href="#配置Git提交时候的账户" class="headerlink" title="配置Git提交时候的账户"></a>配置Git提交时候的账户</h2><ol>
-<li>在Git Bash中运行以下两条配置命令，将用户名和Github注册邮箱配置为全局账户：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ git config --global user.name &quot;your_username&quot;  #设置用户名</span><br><span class="line"></span><br><span class="line">$ git config --global user.email &quot;your_registered_github_Email&quot;  #设置邮箱地址(建议用注册giuhub的邮箱)</span><br></pre></td></tr></table></figure>
-<ol start="2">
-<li>运行以下命令，测试<code>ssh key</code>是否设置成功：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>这时候会提示<code>Are you sure you want to continue connecting (yes/no)?</code>，意思是<code>#确认你是否继续连接</code>，输入<code>yes</code>并点击回车；</p>
-</li>
-<li><p>如果生成ssh key的时候密码不为空，则会看到类似于这样的提示：<code>Enter passphrase for key &#39;/c/Users/xxxx_000/.ssh/id_rsa&#39;:</code>，意思是<code>#生成ssh kye是密码为空则无此项，若设置有密码则有此项且</code>，输入生成ssh key时设置的密码即可；</p>
-</li>
-<li><p>如果能看到类似于<strong>Hi XXXX! You’ve successfully authenticated, but GitHub does not provide shell access.</strong>这样的提示，则表示<code>ssh key</code>配置成功！</p>
-</li>
-</ul>
-<h2 id="将本地项目通过SSH-push到GitHub"><a href="#将本地项目通过SSH-push到GitHub" class="headerlink" title="将本地项目通过SSH push到GitHub"></a>将本地项目通过SSH push到GitHub</h2><ol>
-<li><p>在Github中创建一个新仓储</p>
-</li>
-<li><p>复制新仓储的ssh地址</p>
-</li>
-<li><p>创建本地项目，并在根目录中运行<code>git init</code>初始化</p>
-</li>
-<li><p>在项目根目录中使用<code>touch ***</code>创建<code>README.md</code>和<code>.gitignore</code>文件</p>
-</li>
-<li><p>运行<code>git add .</code></p>
-</li>
-<li><p>运行<code>git commit -m &quot;init git files&quot;</code></p>
-</li>
-<li><p>运行<code>git remote add origin &quot;粘贴复制test ssh key的ssh路径&quot;</code></p>
-</li>
-<li><p>运行<code>git push -u origin master</code></p>
-</li>
-</ol>
-<h2 id="在Github中直接创建新仓储并clone到本地"><a href="#在Github中直接创建新仓储并clone到本地" class="headerlink" title="在Github中直接创建新仓储并clone到本地"></a>在Github中直接创建新仓储并clone到本地</h2><ol>
-<li><p>在Github上创建有<code>LICENSE</code>和<code>README.md</code>的文件</p>
-</li>
-<li><p>使用<code>git clone ssh仓储地址</code>直接将项目克隆到本地</p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://mavistian.github.io/2018/11/Git与GIthub的配合使用/" data-id="cjtcy5kih0005xsu309rz9pjx" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/javaScript/">javaScript</a><span class="category-list-count">2</span></li></ul>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
     </div>
   </div>
+  <div id="local-search-result"></div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ES6/">ES6</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mobile/">Mobile</a><span class="tag-list-count">1</span></li></ul>
+
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/ES6/" style="font-size: 10px;">ES6</a> <a href="/tags/Mobile/" style="font-size: 10px;">Mobile</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2019/03/1552828024/">Es6--箭函数</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/Vue的生命周期/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2019/03/1552484072/">移动端适配解决方案</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/git/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/Git与GIthub的配合使用/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 Mavis<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wulihub.github.io/2019/03/1552828024/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuliHub">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/006RbZVIgy1g11lhuowq3j30xc0xc4cp.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuliHub's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/1552828024/" itemprop="url">Es6--箭函数</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-13T22:09:41+08:00">
+                2019-03-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">javaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  466
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          ES6可以使用“箭头”（=&gt;）定义函数，注意是函数，不要使用这种方式定义类（构造器）。
+一、语法具有一个参数的简单函数1`var` `single = a =&gt; a``single(``&apos;hello, world&apos;``) ``// &apos;hello, world
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/1552828024/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wulihub.github.io/2019/03/Vue的生命周期/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuliHub">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/006RbZVIgy1g11lhuowq3j30xc0xc4cp.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuliHub's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/Vue的生命周期/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-13T18:59:25+08:00">
+                2019-03-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  608
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Vue的生命周期什么是生命周期Vue实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载Dom、渲染→更新→渲染、卸载等一系列过程，我们称这是Vue的生命周期。通俗说就是Vue实例从创建到销毁的过程，就是生命周期。在Vue的整个生命周期中，它提供了一系列的事件，可以让我们在事件触发
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/Vue的生命周期/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wulihub.github.io/2019/03/1552484072/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuliHub">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/006RbZVIgy1g11lhuowq3j30xc0xc4cp.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuliHub's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/03/1552484072/" itemprop="url">移动端适配解决方案</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-10T22:09:41+08:00">
+                2019-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/javaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">javaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          在网上搜了一下，很多面试都会被问到移动端适配方法的问题，最近看了一些文章，这里总结一下。
+首先，谈一下目前为止出现的一些关于移动端适配的技术方案：
+（1）通过媒体查询的方式即CSS3的meida queries
+（2）以天猫首页为代表的 flex 弹性布局
+（3）以淘宝首页为代表的 rem+view
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/03/1552484072/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wulihub.github.io/2018/11/git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuliHub">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/006RbZVIgy1g11lhuowq3j30xc0xc4cp.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuliHub's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/git/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T15:28:26+08:00">
+                2018-11-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  561
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          什么是GIT
+git是代码版本管理工具
+
+与之类似的还有svn
+
+
+什么是Github
+又称为Gayhub
+
+全世界码农一致认为Github是全球最大的同性交友网站
+
+严肃的说是一个远程的仓库，可以让我们保存自己的开源项目
+
+https://github.com/
+
+
+Git和Github区别
+类似
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/git/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wulihub.github.io/2018/11/Git与GIthub的配合使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="WuliHub">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="https://ws1.sinaimg.cn/large/006RbZVIgy1g11lhuowq3j30xc0xc4cp.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WuliHub's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/Git与GIthub的配合使用/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-01T15:00:33+08:00">
+                2018-11-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  728
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Git 与 Github 的配合使用如何生成SSH公钥
+运行git bash，然后输入以下命令，切换到本机的用户目录下面的.ssh目录：
+
+12cd ~/.ssh
+
+如果提示No such file or directory，则表示之前没有配置过ssh公钥；如果没有提示相关错误消息，则表示之前配置过
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/Git与GIthub的配合使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="https://ws1.sinaimg.cn/large/006RbZVIgy1g11lhuowq3j30xc0xc4cp.jpg" alt="WuliHub">
+            
+              <p class="site-author-name" itemprop="name">WuliHub</p>
+              <p class="site-description motion-element" itemprop="description">一个前端的小姐姐</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/wulihub" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:MavisTxf@163.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://wuligit.com" title="WuliGit" target="_blank">WuliGit</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-heartbeat"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WuliHub</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
-<script src="/js/script.js"></script>
+  <span class="post-meta-divider">|</span>
 
 
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>
