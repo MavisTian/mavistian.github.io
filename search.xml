@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Git 与 Github 的配合使用]]></title>
+    <url>%2F2019%2F03%2F1552744256000%2F</url>
+    <content type="text"><![CDATA[如何生成SSH公钥 运行git bash，然后输入以下命令，切换到本机的用户目录下面的.ssh目录： 12cd ~/.ssh 如果提示No such file or directory，则表示之前没有配置过ssh公钥；如果没有提示相关错误消息，则表示之前配置过ssh 公钥 如果之前没有配置过ssh 公钥，则在~/目录中执行以下命令： 12ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot; 其中需要指定一个邮箱，最好是注册github的邮箱地址，执行命令之后，会有三次信息提示，直接输入三次回车即可在用户根目录中生成一个.ssh文件夹，下面存放着ssh key相关文件 将生成的ssh key添加到GitHub 登录GitHub，点击右上角头像，点击settings -&gt; SSH and GPG keys -&gt; New SSH key，会显示一个输入Title和Key的输入框组 Title中根据需要随意填写即可 Key中需要把刚生成的ssh key内容粘贴进去，可以进入用户根目录，找到.ssh文件夹，用记事本打开id_rsa.pub文件，这个文件中存放的就是刚才生成的ssh key；把文件中所有的字符串复制，粘贴到GitHub中保存即可 配置Git提交时候的账户 在Git Bash中运行以下两条配置命令，将用户名和Github注册邮箱配置为全局账户： 1234$ git config --global user.name &quot;your_username&quot; #设置用户名$ git config --global user.email &quot;your_registered_github_Email&quot; #设置邮箱地址(建议用注册giuhub的邮箱) 运行以下命令，测试ssh key是否设置成功： 12$ ssh -T git@github.com 这时候会提示Are you sure you want to continue connecting (yes/no)?，意思是#确认你是否继续连接，输入yes并点击回车； 如果生成ssh key的时候密码不为空，则会看到类似于这样的提示：Enter passphrase for key &#39;/c/Users/xxxx_000/.ssh/id_rsa&#39;:，意思是#生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可； 如果能看到类似于Hi XXXX! You’ve successfully authenticated, but GitHub does not provide shell access.这样的提示，则表示ssh key配置成功！ 将本地项目通过SSH push到GitHub 在Github中创建一个新仓储 复制新仓储的ssh地址 创建本地项目，并在根目录中运行git init初始化 在项目根目录中使用touch ***创建README.md和.gitignore文件 运行git add . 运行git commit -m &quot;init git files&quot; 运行git remote add origin &quot;粘贴复制test ssh key的ssh路径&quot; 运行git push -u origin master 在Github中直接创建新仓储并clone到本地 在Github上创建有LICENSE和README.md的文件 使用git clone ssh仓储地址直接将项目克隆到本地]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue的生命周期]]></title>
+    <url>%2F2019%2F03%2F1552571456000%2F</url>
+    <content type="text"><![CDATA[什么是生命周期Vue实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载Dom、渲染→更新→渲染、卸载等一系列过程，我们称这是Vue的生命周期。通俗说就是Vue实例从创建到销毁的过程，就是生命周期。在Vue的整个生命周期中，它提供了一系列的事件，可以让我们在事件触发时注册js方法，可以让我们用自己注册的js方法控制整个大局，在这些事件响应方法中的this直接指向的是vue的实例。 对生命周期图的标注 特别值得注意的是created钩子函数和mounted钩子函数的区别…每个钩子函数都在啥时间触发beforeCreate在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。 created实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。 beforeMount在挂载开始之前被调用：相关的 render 函数首次被调用。 mountedel 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。 beforeUpdate数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。 updated由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。 该钩子在服务器端渲染期间不被调用。 beforeDestroy实例销毁之前调用。在这一步，实例仍然完全可用。 destroyedVue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+        <tag>生命周期</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Es6--箭函数]]></title>
     <url>%2F2019%2F03%2F1552828024%2F</url>
     <content type="text"><![CDATA[ES6可以使用“箭头”（=&gt;）定义函数，注意是函数，不要使用这种方式定义类（构造器）。 一、语法具有一个参数的简单函数1`var` `single = a =&gt; a``single(``&apos;hello, world&apos;``) ``// &apos;hello, world&apos;` 没有参数的需要用在箭头前加上小括号1`var` `log = () =&gt; &#123;`` ``alert(``&apos;no param&apos;``)``&#125;` 多个参数需要用到小括号，参数间逗号间隔，例如两个数字相加1`var` `add = (a, b) =&gt; a + b``add(3, 8) ``// 11` 函数体多条语句需要用到大括号1`var` `add = (a, b) =&gt; &#123;`` ``if` `(``typeof` `a == ``&apos;number&apos;` `&amp;&amp; ``typeof` `b == ``&apos;number&apos;``) &#123;`` ``return` `a + b`` ``&#125; ``else` `&#123;`` ``return` `0`` ``&#125;``&#125;` 返回对象时需要用小括号包起来，因为大括号被占用解释为代码块了1`var` `getHash = arr =&gt; &#123;`` ``// ...`` ``return` `(&#123;`` ``name: ``&apos;Jack&apos;``,`` ``age: 33`` ``&#125;)``&#125;` 直接作为事件handler1`document.addEventListener(``&apos;click&apos;``, ev =&gt; &#123;`` ``console.log(ev)``&#125;)` 作为数组排序回调1`var` `arr = [1, 9 , 2, 4, 3, 8].sort((a, b) =&gt; &#123;`` ``if` `(a - b &gt; 0 ) &#123;`` ``return` `1`` ``&#125; ``else` `&#123;`` ``return` `-1`` ``&#125;``&#125;)``arr ``// [1, 2, 3, 4, 8, 9]` 二、注意点typeof运算符和普通的function一样1`var` `func = a =&gt; a``console.log(``typeof` `func); ``// &quot;function&quot;` instanceof也返回true，表明也是Function的实例1`console.log(func ``instanceof` `Function); ``// true` this固定，不再善变1`obj = &#123;`` ``data: [``&apos;John Backus&apos;``, ``&apos;John Hopcroft&apos;``],`` ``init: ``function``() &#123;`` ``document.onclick = ev =&gt; &#123;`` ``alert(``this``.data) ``// [&apos;John Backus&apos;, &apos;John Hopcroft&apos;]`` ``&#125;`` ``// 非箭头函数`` ``// document.onclick = function(ev) &#123;`` ``// alert(this.data) // undefined`` ``// &#125;`` ``&#125;``&#125;``obj.init()` 这个很有用，再不用写me，self，_this了，或者bind。 箭头函数不能用new1`var` `Person = (name, age) =&gt; &#123;`` ``this``.name = name`` ``this``.age = age``&#125;``var` `p = ``new` `Func(``&apos;John&apos;``, 33) ``// error` 不能使用argument 1`var` `func = () =&gt; &#123;`` ``console.log(arguments)``&#125;``func(55) ``//` 对于5，在Firefox36里测试是可以输出55的，貌似并没有这个限制]]></content>
@@ -12,9 +35,15 @@
       </tags>
   </entry>
   <entry>
-    <title></title>
-    <url>%2F2019%2F03%2FVue%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%2F</url>
-    <content type="text"><![CDATA[Vue的生命周期什么是生命周期Vue实例有一个完整的生命周期，也就是从开始创建、初始化数据、编译模板、挂载Dom、渲染→更新→渲染、卸载等一系列过程，我们称这是Vue的生命周期。通俗说就是Vue实例从创建到销毁的过程，就是生命周期。在Vue的整个生命周期中，它提供了一系列的事件，可以让我们在事件触发时注册js方法，可以让我们用自己注册的js方法控制整个大局，在这些事件响应方法中的this直接指向的是vue的实例。 对生命周期图的标注 特别值得注意的是created钩子函数和mounted钩子函数的区别…每个钩子函数都在啥时间触发beforeCreate在实例初始化之后，数据观测(data observer) 和 event/watcher 事件配置之前被调用。 created实例已经创建完成之后被调用。在这一步，实例已完成以下的配置：数据观测(data observer)，属性和方法的运算， watch/event 事件回调。然而，挂载阶段还没开始，$el 属性目前不可见。 beforeMount在挂载开始之前被调用：相关的 render 函数首次被调用。 mountedel 被新创建的 vm.$el 替换，并挂载到实例上去之后调用该钩子。 beforeUpdate数据更新时调用，发生在虚拟 DOM 重新渲染和打补丁之前。 你可以在这个钩子中进一步地更改状态，这不会触发附加的重渲染过程。 updated由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。当这个钩子被调用时，组件 DOM 已经更新，所以你现在可以执行依赖于 DOM 的操作。然而在大多数情况下，你应该避免在此期间更改状态，因为这可能会导致更新无限循环。 该钩子在服务器端渲染期间不被调用。 beforeDestroy实例销毁之前调用。在这一步，实例仍然完全可用。 destroyedVue 实例销毁后调用。调用后，Vue 实例指示的所有东西都会解绑定，所有的事件监听器会被移除，所有的子实例也会被销毁。 该钩子在服务器端渲染期间不被调用。]]></content>
+    <title><![CDATA[Git]]></title>
+    <url>%2F2019%2F03%2F1552398656000%2F</url>
+    <content type="text"><![CDATA[git是代码版本管理工具 与之类似的还有svn 什么是Github 又称为Gayhub 全世界码农一致认为Github是全球最大的同性交友网站 严肃的说是一个远程的仓库，可以让我们保存自己的开源项目 https://github.com/ Git和Github区别 类似老婆和老婆饼的区别 如何使用git以及Github来进行代码版本管理首先我们要配置公钥 打开gitBush，输入以下命令 ssh-keygen -t rsa 输入完成后，连续按三次回车，如果出现以下效果，则成功生成公钥和私钥 查看公钥保存位置 配置公钥 打开Github,单击头像，选择Setting 选中选项 创建新公钥 配置公钥，配置完成后单击Add SSH Key 我们为甚么要配置公钥 公钥我们一般是给服务器的,服务器会在权限中加入我给的公钥,然后当我从远地仓库中下载项目的时候,比如我在git clone xxx的时候，服务器就会通过我绑定的公钥来匹配我的私钥，这个时候,如果匹配,则就可以正常下载,如果不匹配,则失败.其实就是一种加密的保证安全的手段 创建本地仓库 本地新建项目文件夹，在文件夹内按住Shift键 使用git之前我们要进行全局或者局部用户名和邮箱配置 git config –global user.name “Listen”git config –global user.email “m18614084953@163.com“ 初始化本地仓库 git init 进行代码提交 git add . (你将会提交本地仓库的所有文件)git add index.html (你将会提交你所声明的文件) 添加文件至暂存区 git commit -m “本次提交注释” 如果说你是第一次进行提交的话，那么你在进行push之前，需要再执行以下命令 git remote add origin https://github.com/listentime/MyObject.git 进行代码的推送 git push origin 分支名称（master） 切换分支 git checkout 分支名 创建分支 git branch 分支名 合写方式,创建并切换分支 git checkout -b 分支名 拉取代码 git pull origin 分支名]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[移动端适配解决方案]]></title>
@@ -26,15 +55,5 @@
       <tags>
         <tag>Mobile</tag>
       </tags>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F11%2Fgit%2F</url>
-    <content type="text"><![CDATA[什么是GIT git是代码版本管理工具 与之类似的还有svn 什么是Github 又称为Gayhub 全世界码农一致认为Github是全球最大的同性交友网站 严肃的说是一个远程的仓库，可以让我们保存自己的开源项目 https://github.com/ Git和Github区别 类似老婆和老婆饼的区别 如何使用git以及Github来进行代码版本管理首先我们要配置公钥 打开gitBush，输入以下命令 ssh-keygen -t rsa 输入完成后，连续按三次回车，如果出现以下效果，则成功生成公钥和私钥 查看公钥保存位置 配置公钥 打开Github,单击头像，选择Setting 选中选项 创建新公钥 配置公钥，配置完成后单击Add SSH Key 我们为甚么要配置公钥 公钥我们一般是给服务器的,服务器会在权限中加入我给的公钥,然后当我从远地仓库中下载项目的时候,比如我在git clone xxx的时候，服务器就会通过我绑定的公钥来匹配我的私钥，这个时候,如果匹配,则就可以正常下载,如果不匹配,则失败.其实就是一种加密的保证安全的手段 创建本地仓库 本地新建项目文件夹，在文件夹内按住Shift键 使用git之前我们要进行全局或者局部用户名和邮箱配置 git config –global user.name “Listen”git config –global user.email “m18614084953@163.com“ 初始化本地仓库 git init 进行代码提交 git add . (你将会提交本地仓库的所有文件)git add index.html (你将会提交你所声明的文件) 添加文件至暂存区 git commit -m “本次提交注释” 如果说你是第一次进行提交的话，那么你在进行push之前，需要再执行以下命令 git remote add origin https://github.com/listentime/MyObject.git 进行代码的推送 git push origin 分支名称（master） 切换分支 git checkout 分支名 创建分支 git branch 分支名 合写方式,创建并切换分支 git checkout -b 分支名 拉取代码 git pull origin 分支名]]></content>
-  </entry>
-  <entry>
-    <title></title>
-    <url>%2F2018%2F11%2FGit%E4%B8%8EGIthub%E7%9A%84%E9%85%8D%E5%90%88%E4%BD%BF%E7%94%A8%2F</url>
-    <content type="text"><![CDATA[Git 与 Github 的配合使用如何生成SSH公钥 运行git bash，然后输入以下命令，切换到本机的用户目录下面的.ssh目录： 12cd ~/.ssh 如果提示No such file or directory，则表示之前没有配置过ssh公钥；如果没有提示相关错误消息，则表示之前配置过ssh 公钥 如果之前没有配置过ssh 公钥，则在~/目录中执行以下命令： 12ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot; 其中需要指定一个邮箱，最好是注册github的邮箱地址，执行命令之后，会有三次信息提示，直接输入三次回车即可在用户根目录中生成一个.ssh文件夹，下面存放着ssh key相关文件 将生成的ssh key添加到GitHub 登录GitHub，点击右上角头像，点击settings -&gt; SSH and GPG keys -&gt; New SSH key，会显示一个输入Title和Key的输入框组 Title中根据需要随意填写即可 Key中需要把刚生成的ssh key内容粘贴进去，可以进入用户根目录，找到.ssh文件夹，用记事本打开id_rsa.pub文件，这个文件中存放的就是刚才生成的ssh key；把文件中所有的字符串复制，粘贴到GitHub中保存即可 配置Git提交时候的账户 在Git Bash中运行以下两条配置命令，将用户名和Github注册邮箱配置为全局账户： 1234$ git config --global user.name &quot;your_username&quot; #设置用户名$ git config --global user.email &quot;your_registered_github_Email&quot; #设置邮箱地址(建议用注册giuhub的邮箱) 运行以下命令，测试ssh key是否设置成功： 12$ ssh -T git@github.com 这时候会提示Are you sure you want to continue connecting (yes/no)?，意思是#确认你是否继续连接，输入yes并点击回车； 如果生成ssh key的时候密码不为空，则会看到类似于这样的提示：Enter passphrase for key &#39;/c/Users/xxxx_000/.ssh/id_rsa&#39;:，意思是#生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可； 如果能看到类似于Hi XXXX! You’ve successfully authenticated, but GitHub does not provide shell access.这样的提示，则表示ssh key配置成功！ 将本地项目通过SSH push到GitHub 在Github中创建一个新仓储 复制新仓储的ssh地址 创建本地项目，并在根目录中运行git init初始化 在项目根目录中使用touch ***创建README.md和.gitignore文件 运行git add . 运行git commit -m &quot;init git files&quot; 运行git remote add origin &quot;粘贴复制test ssh key的ssh路径&quot; 运行git push -u origin master 在Github中直接创建新仓储并clone到本地 在Github上创建有LICENSE和README.md的文件 使用git clone ssh仓储地址直接将项目克隆到本地]]></content>
   </entry>
 </search>
