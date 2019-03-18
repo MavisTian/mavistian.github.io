@@ -12,6 +12,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[require不同语言下的正确显示]]></title>
+    <url>%2F2019%2F03%2F153666677%2F</url>
+    <content type="text"><![CDATA[vue项目中使用 required不同语言环境下的正确显示1&lt;input type=&quot;text&quot; required oninvalid=&quot;setCustomValidity(&apos;请填写内容....&apos;)&quot; oninput=&quot;setCustomValidity(&apos;&apos;)&quot;&gt; 这样解决:12&lt;input type=&quot;text&quot; maxlength=&quot;18&quot; v-model=&quot;passWord&quot; @blur=&quot;passWordFocus = false&quot; v-focus=&quot;passWordFocus&quot; required v-else oninput=&quot;setCustomValidity(&apos;&apos;);&quot;/&gt; 在mounted中使用：12345678910mounted () &#123; var this = this; this.$t(&quot;placeholder.require&quot;) document.forms[0].addEventListener(&quot;invalid&quot;,form_invalid,true); function form_invalid(e)&#123; var elem = e.target; // 产生错误的元素 elem.setCustomValidity(this.$t(&quot;placeholder.require&quot;)) &#125;&#125;,]]></content>
+      <categories>
+        <category>Vue</category>
+      </categories>
+      <tags>
+        <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Git 与 Github 的配合使用]]></title>
     <url>%2F2019%2F03%2F1552744256000%2F</url>
     <content type="text"><![CDATA[如何生成SSH公钥 运行git bash，然后输入以下命令，切换到本机的用户目录下面的.ssh目录： 12cd ~/.ssh 如果提示No such file or directory，则表示之前没有配置过ssh公钥；如果没有提示相关错误消息，则表示之前配置过ssh 公钥 如果之前没有配置过ssh 公钥，则在~/目录中执行以下命令： 12ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot; 其中需要指定一个邮箱，最好是注册github的邮箱地址，执行命令之后，会有三次信息提示，直接输入三次回车即可在用户根目录中生成一个.ssh文件夹，下面存放着ssh key相关文件 将生成的ssh key添加到GitHub 登录GitHub，点击右上角头像，点击settings -&gt; SSH and GPG keys -&gt; New SSH key，会显示一个输入Title和Key的输入框组 Title中根据需要随意填写即可 Key中需要把刚生成的ssh key内容粘贴进去，可以进入用户根目录，找到.ssh文件夹，用记事本打开id_rsa.pub文件，这个文件中存放的就是刚才生成的ssh key；把文件中所有的字符串复制，粘贴到GitHub中保存即可 配置Git提交时候的账户 在Git Bash中运行以下两条配置命令，将用户名和Github注册邮箱配置为全局账户： 1234$ git config --global user.name &quot;your_username&quot; #设置用户名$ git config --global user.email &quot;your_registered_github_Email&quot; #设置邮箱地址(建议用注册giuhub的邮箱) 运行以下命令，测试ssh key是否设置成功： 12$ ssh -T git@github.com 这时候会提示Are you sure you want to continue connecting (yes/no)?，意思是#确认你是否继续连接，输入yes并点击回车； 如果生成ssh key的时候密码不为空，则会看到类似于这样的提示：Enter passphrase for key &#39;/c/Users/xxxx_000/.ssh/id_rsa&#39;:，意思是#生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可； 如果能看到类似于Hi XXXX! You’ve successfully authenticated, but GitHub does not provide shell access.这样的提示，则表示ssh key配置成功！ 将本地项目通过SSH push到GitHub 在Github中创建一个新仓储 复制新仓储的ssh地址 创建本地项目，并在根目录中运行git init初始化 在项目根目录中使用touch ***创建README.md和.gitignore文件 运行git add . 运行git commit -m &quot;init git files&quot; 运行git remote add origin &quot;粘贴复制test ssh key的ssh路径&quot; 运行git push -u origin master 在Github中直接创建新仓储并clone到本地 在Github上创建有LICENSE和README.md的文件 使用git clone ssh仓储地址直接将项目克隆到本地]]></content>
