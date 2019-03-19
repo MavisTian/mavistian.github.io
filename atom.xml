@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wulihub.github.io/"/>
-  <updated>2019-03-19T10:37:34.059Z</updated>
+  <updated>2019-03-19T10:41:20.493Z</updated>
   <id>http://wulihub.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue中调用接口时出现跨域问题的解决</title>
+    <title>解决vue中调用接口出现跨域</title>
     <link href="http://wulihub.github.io/2019/03/13214214343/"/>
     <id>http://wulihub.github.io/2019/03/13214214343/</id>
     <published>2019-03-19T02:36:41.000Z</published>
-    <updated>2019-03-19T10:37:34.059Z</updated>
+    <updated>2019-03-19T10:41:20.493Z</updated>
     
     <summary type="html">
     
@@ -32,10 +32,10 @@
     
     </summary>
     
-      <category term="Vue" scheme="http://wulihub.github.io/categories/Vue/"/>
+      <category term="vue" scheme="http://wulihub.github.io/categories/vue/"/>
     
     
-      <category term="Vue" scheme="http://wulihub.github.io/tags/Vue/"/>
+      <category term="vue" scheme="http://wulihub.github.io/tags/vue/"/>
     
   </entry>
   

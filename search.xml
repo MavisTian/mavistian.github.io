@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[vue中调用接口时出现跨域问题的解决]]></title>
+    <title><![CDATA[解决vue中调用接口出现跨域]]></title>
     <url>%2F2019%2F03%2F13214214343%2F</url>
     <content type="text"><![CDATA[vue中调用接口时出现跨域问题的解决1: 在build 中的webpack.dev.conf.js中更改配置(在 const portfinder = require(‘portfinder’) 的下方增加 123456const express = require(&apos;express&apos;)const app = express()var appData = require(&apos;../data.json&apos;) // 加载本地数据var data = appData.datavar apiRoutes = express.Router()app.use(&apos;/api&apos;, apiRoutes) 2: 在bulid 中的webpack.dev.conf.js中更改配置(在devServer 中 watchOptions: { ​ poll: config.dev.poll, ​ }, 下发放增加 12345678before(app) &#123; app.get(&apos;/api/banner&apos;, (req, res) =&gt; &#123; res.json(&#123; data: data &#125;) &#125;) &#125; &#125;, 3: 在package.json 的同目录下增加 data.json 文件12 4: 在 build 中的 index.js 中更改配置(在module.export 中的 dev 中的 proxyTable: { } 中增加) (给我的接口是: http://lq.tieylife.com/api/banner) 1234567&apos;/api&apos;: &#123; target: &apos;http://lq.tieylife.com&apos;, //源地址 changeOrigin: true, //改变源 pathRewrite: &#123; &apos;^/api&apos;: &apos;&apos; //路径重写 &#125; &#125; 5: 在 methods 中的方法中用 axios调用12345678910axios .get(&quot;/api/banner&quot;) .then((response) =&gt; &#123; this.imgBanner = response.data; // console.log(response); console.log(response.data); &#125;) .catch(function(error) &#123; console.log(error); &#125;); // 此时就可以获取到数据了 6: 在此操作中遇到的问题12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061621: 在项目中需要用到后台的数据对前端渲染，使用到了vue整合的axios，使用vue中的钩子函数在页面组件挂载完成之后向后台发送一个get请求然后将返回后的数据赋值data（）中定义的属性：data () &#123; return &#123; image:[], &#125;&#125;methods: &#123; getImg() &#123; axios .get(&quot;/api/banner&quot;) .then((response) =&gt; &#123; _this.imgBanner = response.data; console.log(response.data); &#125;) .catch(function(error) &#123; console.log(error); &#125;); &#125; &#125;执行后前端报错：原因：在请求执行成功后执行回调函数中的内容，回调函数处于其它函数的内部this不会与任何对象绑定，为undefined。解决方案：一）将指向vue对象的this赋值给外部方法定义的属性，然后在内部方法中使用该属性methods: &#123; getImg() &#123; let _this = this axios .get(&quot;/api/banner&quot;) .then(function (response) &#123; _this.image = response.data; ) .catch(function(error) &#123; console.log(error); &#125;); &#125; &#125;二）使用箭头函数 methods: &#123; getImg() &#123; axios .get(&quot;/api/banner&quot;) .then((response) =&gt; &#123; _this.imgBanner = response.data; console.log(response.data); &#125;) .catch(function(error) &#123; console.log(error); &#125;); &#125; &#125;]]></content>
       <categories>
-        <category>Vue</category>
+        <category>vue</category>
       </categories>
       <tags>
-        <tag>Vue</tag>
+        <tag>vue</tag>
       </tags>
   </entry>
   <entry>
