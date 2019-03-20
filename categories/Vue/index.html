@@ -93,7 +93,7 @@
 <meta name="description" content="一个前端的小姐姐">
 <meta property="og:type" content="website">
 <meta property="og:title" content="WuliHub&#39;s Blog">
-<meta property="og:url" content="http://wulihub.github.io/categories/Vue/index.html">
+<meta property="og:url" content="http://wulihub.github.io/categories/vue/index.html">
 <meta property="og:site_name" content="WuliHub&#39;s Blog">
 <meta property="og:description" content="一个前端的小姐姐">
 <meta property="og:locale" content="zh-Hans">
@@ -129,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://wulihub.github.io/categories/Vue/">
+  <link rel="canonical" href="http://wulihub.github.io/categories/vue/">
 
 
 
 
 
-  <title>分类: Vue | WuliHub's Blog</title>
+  <title>分类: vue | WuliHub's Blog</title>
   
 
 
@@ -287,7 +287,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>Vue<small>分类</small>
+        <h1>vue<small>分类</small>
         </h1>
       </div>
 
@@ -299,43 +299,17 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/03/153666677/" itemprop="url">
+            <a class="post-title-link" href="/2019/03/13214214343/" itemprop="url">
               
-                <span itemprop="name">require不同语言下的正确显示</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-16T22:00:41+08:00" content="2019-03-16">
-          03-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/1552571456000/" itemprop="url">
-              
-                <span itemprop="name">Vue的生命周期</span>
+                <span itemprop="name">解决vue中调用接口出现跨域</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-03-14T22:09:41+08:00" content="2019-03-14">
-          03-14
+        <time class="post-time" itemprop="dateCreated" datetime="2019-03-19T10:36:41+08:00" content="2019-03-19">
+          03-19
         </time>
       </div>
 
@@ -961,6 +935,49 @@
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+lick(function(e) {
       e.stopPropagation();
       if (isfetched === false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
